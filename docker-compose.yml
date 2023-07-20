@@ -1,0 +1,13 @@
+version: '3'
+services:
+  hazel-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      - ACCOUNT=Kabuswe
+      - REPOSITORY=hazel-update-server-demo
+      - TOKEN=
+      - URL=http://0.0.0.0:8080
